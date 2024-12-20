@@ -29,10 +29,6 @@ def isListSafe(alist):
 for a in lists:
     isSafeReturn = isListSafe(a)
     nSafe += isSafeReturn
-    
-
-for a in lists:
-    isSafeReturn = isListSafe(a)
     nSafe_dampened += isSafeReturn
 
     if isSafeReturn == 0:
@@ -43,6 +39,7 @@ for a in lists:
                 nSafe_dampened += 1
                 break
 
+    
 
 
 print('number of safe lists =', nSafe)

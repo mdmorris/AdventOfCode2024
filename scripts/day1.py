@@ -18,3 +18,17 @@ distance = np.abs(list2_sorted - list1_sorted)
 
 
 print('sum of distances between sorted numbers =', np.sum(distance))
+
+
+
+
+list2_array = np.array(list2)
+
+list_mult = []
+
+for n in list1:
+    m = len(list2_array[list2_array==n])*n
+    list_mult.append(m)
+
+
+print('sum of multiplication factors =', np.sum(list_mult))
